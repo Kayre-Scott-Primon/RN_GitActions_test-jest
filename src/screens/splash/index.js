@@ -1,10 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
 import { Styles } from './style';
 
 // import { Container } from './styles';
 
-const Splash: React.FC = () => {
+const Splash = () => {
     return (
         <Styles.Container>
             <Styles.Label>

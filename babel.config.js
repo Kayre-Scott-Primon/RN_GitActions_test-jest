@@ -1,20 +1,5 @@
-// babel.config.js
 module.exports = {
   presets: [
-    [
-      "@babel/preset-react",
-      {
-        "flow": false,
-        "typescript": true
-      }
-    ],
-    [
-      "@babel/preset-typescript",
-      {
-        "isTSX": true,
-        "allExtensions": true
-      }
-    ]
+    ['module:metro-react-native-babel-preset']
   ],
-  plugins: ["@babel/plugin-syntax-class-properties", "react-auto-binding"]
-}
+};
