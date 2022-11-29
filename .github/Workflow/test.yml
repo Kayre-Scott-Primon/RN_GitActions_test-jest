@@ -1,0 +1,19 @@
+name: RN - Github actions for test
+on:
+  push:
+   branches:
+    - main
+jobs:
+  publish:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - uses: expo/expo-github-actions@v6
+        with:
+          node-version: 4.x
+      - run: npm
+      - run: npm jest
