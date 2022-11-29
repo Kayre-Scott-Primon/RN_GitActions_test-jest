@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 14.x
       - run: npm
-      - run: npm jest
+      - run: npm test
