@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 18.x
       - run: yarn
-      - run: npm jest
+      - run: yarn jest
